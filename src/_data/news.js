@@ -9,5 +9,3 @@ module.exports = async function() {
     }
 
   };
-throw 42;
-
