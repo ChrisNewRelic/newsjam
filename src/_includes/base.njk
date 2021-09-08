@@ -36,7 +36,7 @@
     </header>
     {{ content | safe }}
     <script type="text/javascript">
-        document.querySelector("#errorTrigger").addEventListener("click", () => { console.log('please work') });
+        document.querySelector("#errorTrigger").addEventListener("click", () => { foo = bar });
     </script>
 </body>
 </html>
