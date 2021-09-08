@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> {{ title }}</title>
+    <title> {{ title }} </title>
     <style>
         body { text-align: center }
         div.container {
@@ -32,11 +32,11 @@
 <body>
     <header>
         <a href="/">Home</a><!-- | <a href="/about">About this page --></a>
+        <button id="errorTrigger">Button</button>
     </header>
     {{ content | safe }}
     <script type="text/javascript">
-        throw 'Everything is terrible and it will never be okay again...';
-        throw 'Why will you not be detected';
+        document.querySelector("#errorTrigger").addEventListener("click", () => { console.log('please work') });
     </script>
 </body>
 </html>
